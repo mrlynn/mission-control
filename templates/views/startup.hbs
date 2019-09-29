@@ -1,0 +1,25 @@
+<div class="container">
+	<h1>Startups</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <iframe style="border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="640" height="480" src="https://charts.mongodb.com/charts-lynn-qercf/embed/charts?id=9290c2e3-7239-4d75-9cd2-3af0b544a5a9&tenant=4b02172e-aa94-4cac-8563-4e5934642ec7"></iframe>
+    </div>
+	<div class="row">
+		<div class="col-sm-8 col-md-9">
+			<h4 class="text-weight-normal">Showing {{ data.startups.results.length}} startups.</h4>
+			<div class="blog">
+				{{# each data.startups.results}}
+				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+					<h2><a href="{{slug}}">{{{name}}}</a></h2>
+					
+					{{#if image}}<img src="{{{cloudinaryUrl image width=160 height=160 crop='fit' }}}" class="img pull-right">{{/if}}
+					<p>{{{description.brief}}}</p>
+					{{#if description.extended}}<p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>{{/if}}
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+	{{>pagination}}
+</div>

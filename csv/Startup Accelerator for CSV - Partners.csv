@@ -1,0 +1,24 @@
+name,type,creditAmount,customCredit,techAdvisor,formName,jmpId,customShareLink,tracking
+Y Combinator,Accelerator,"$10,000",Yes,Yes,YC Startup Accelerator Form Submission,,https://www.mongodb.com/startup-accelerator/ycombinator,
+Techstars,Accelerator,"$5,000",Yes,Yes,Int_CM_AtlasStartupAccelerator-TechstarsCompanies_,,https://www.mongodb.com/startup-accelerator/techstars,
+WeWork Labs,Accelerator,"$3,600",Yes,No,New WeWork Labs Form Submission,,https://mongodb.com/startup-accelerator/wework-labs,
+Founder Club by Product Hunt,Network,"$5,000",Yes,No,Form Submission: Founder Club Product Hunt,,https://www.mongodb.com/startup-accelerator/founder-club,
+Rough Draft Ventures,VC,"$3,600",No,Yes,,,https://www.mongodb.com/startup-accelerator,No tracking
+Work-bench,VC,"$3,600",No,No,,,https://www.mongodb.com/startup-accelerator,No tracking
+Boldstart,VC,"$3,600",No,No,,,https://www.mongodb.com/startup-accelerator,No tracking
+Parallel 18,Accelerator,"$3,600",No,No,,,https://www.mongodb.com/startup-accelerator,No tracking
+GAN,Network,"$5,000",Yes,Yes,,jmp=gan,https://www.mongodb.com/startup-accelerator?jmp=gan,Jump ID & UTM
+Anubix Ventures,Incubator,"$3,600",No,No,,,https://www.mongodb.com/startup-accelerator,No tracking
+The Venture City,Accelerator,"$3,600",No,No,,jmp=theventurecity,https://www.mongodb.com/startup-accelerator?jmp=theventurecity,Jump ID
+AB Startups,Network,"$3,600",No,No,,jmp=abstartups,https://www.mongodb.com/startup-accelerator?jmp=abstartups,Jump ID
+Google Cloud for Startups,Corporate Program,"$3,600",No,No,,jmp=gc4s,https://www.mongodb.com/startup-accelerator?jmp=gc4s,Jump ID & UTM
+Flybridge Capital,VC,"$5,000",No,Yes,,jmp=flybridge,https://www.mongodb.com/startup-accelerator?utm_campaign=startup_accelerator&utm_source=flybridge&utm_medium=referral&jmp=flybridge,Jump ID & UTM
+Entrepreneur First,Accelerator,"$3,600",No,No,,jmp=ef,https://www.mongodb.com/startup-accelerator?jmp=ef&utm_campaign=startup_accelerator&utm_source=entrepreneur_first&utm_medium=referral,Jump ID & UTM
+NTT,Corporate Program,"$3,600",No,No,,jmp=ntt,https://www.mongodb.com/startup-accelerator?utm_campaign=startup_accelerator&utm_source=ntt&utm_medium=referral&jmp=ntt,Jump ID & UTM
+Acceleprise,VC,"$5,000",No,Yes,,jmp=acceleprise,https://www.mongodb.com/startup-accelerator?jmp=acceleprise&utm_campaign=startup_accelerator&utm_source=acceleprise&utm_medium=referral,Jump ID & UTM
+NYU,Accelerator,"$5,000",No,Yes,,jmp=NYU,https://www.mongodb.com/startup-accelerator?utm_campaign=startup_accelerator&utm_source=nyu&utm_medium=referral&jmp=nyu,Jump ID & UTM
+Brex,Corporate Program,"$5,000",No,Yes,New Form Submit: Atlas Startup Accelerator Brex 5K,,https://www.mongodb.com/lp/brex-5000,
+Brex,Corporate Program,"$1,000",Yes,No,New Form Submit: Atlas Startup Accelerator Brex 1K,,https://www.mongodb.com/lp/brex-1000,
+Founderly,Accelerator,"$3,000",No,No,,jmp=founderly,https://www.mongodb.com/startup-accelerator?utm_campaign=startup_accelerator&utm_source=founderly&utm_medium=referral&jmp=founderly,Jump ID & UTM
+Founderly ,Accelerator ,"$5,000",No,Yes,,jmp=founderly5000,https://www.mongodb.com/startup-accelerator?utm_campaign=startup_accelerator&utm_source=founderly5000&utm_medium=referral&jmp=founderly5000,Jump ID & UTM
+YC Startup School,Accelerator,$500,Autoresponse ,No,New Form Submit: Atlas Startup Accelerator YC Startup School Students,,,
