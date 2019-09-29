@@ -43,7 +43,7 @@ Startup.add({
     companyUrl: { type: Types.Url },
     referenceLink: { type: Types.Url, label: "Angle or Crunchbase URL"},
 	status: { type: Types.Select, options: 'accepted, rejected, expired, applied, pending', default: 'accepted', index: true },
-    rejectReason: { type: String, dependsOn: { status: ['rejectedReason']}},
+    rejectReason: { type: String, dependsOn: { status: ['rejected']}},
     rejectedInSDFC: { type: Boolean },
     advisor: { type: Types.Relationship, ref: 'User', index: true },
     advisorName: { type: String },
@@ -56,7 +56,7 @@ Startup.add({
     partnerName: { type: String, required: false, label: "Partner Name" },
     activationCodes: { type: Types.TextArray },
     cohort: { type: String, default: defaultCohort },
-    stage: { type: Types.Select, options: 'pre-seed, seed, public, NA, other', default: 'seed', index: true },
+    stage: { type: Types.Select, options: 'Pre-seed, Seed, Public, NA, Other', default: 'Seed' },
     socialLink: { type: Types.Url, label: "Social Link"},
     acceptedInSDFC: { type: Boolean },
 	description: {
@@ -80,5 +80,5 @@ Startup.schema.virtual('partnerAligned').get(function() {
 
  Startup.relationship({path:'notes', ref: 'Note', refPath: 'startup', many: true });
 
-Startup.defaultColumns = 'name, companyUrl|20%, status|20%, country|20%, region|20%, publishedDate|10%, partnerAligned|10%';
+Startup.defaultColumns = 'name, logo|20%, companyUrl|20%, status|10%, country|5%, region|10%, publishedDate|10%, partnerAligned|10%';
 Startup.register();
