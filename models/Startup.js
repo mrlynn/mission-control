@@ -80,5 +80,5 @@ Startup.schema.virtual('partnerAligned').get(function() {
 
  Startup.relationship({path:'notes', ref: 'Note', refPath: 'startup', many: true });
 
-Startup.defaultColumns = 'name, logo|20%, companyUrl|20%, cohort|10%, status|10%, country|5%, region|10%, publishedDate|10%, partnerAligned|10%';
+Startup.defaultColumns = 'name|10%, logo|10%, companyUrl|20%, cohort|20%, status|10%, country|5%, region|10%, publishedDate|10%, partnerAligned|10%';
 Startup.register();
