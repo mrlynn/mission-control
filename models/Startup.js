@@ -51,7 +51,7 @@ Startup.add({
     logo: { type: Types.CloudinaryImage },
     city: { type: String, required: false },
     country: { type: String, default: 'US' },
-	region: { type: Types.Select, options: 'APAC, AMER, EMEA, other', default: 'AMER', index: true },
+	region: { type: Types.Select, options: 'APAC, AMER, EMEA, other', default: 'AMER' },
     partner: { type: Types.Relationship, ref: 'Partner', many: false },
     partnerName: { type: String, required: false, label: "Partner Name" },
     activationCodes: { type: Types.TextArray },
