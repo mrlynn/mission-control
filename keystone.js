@@ -17,6 +17,7 @@ keystone.init({
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
+	
 	'views': 'templates/views',
 	'view engine': '.hbs',
 
@@ -37,6 +38,7 @@ keystone.init({
 // Load your project's Models
 keystone.import('models');
 
+
 // Setup common locals for your templates. The following are required for the
 // bundled templates and layouts. Any runtime locals (that should be set uniquely
 // for each request) should be added to ./routes/middleware.js
@@ -45,8 +47,8 @@ keystone.set('locals', {
 	env: keystone.get('env'),
 	utils: keystone.utils,
 	editable: keystone.content.editable,
-	'signin logo': '/images/rocket.png'
 });
+keystone.set('signin logo', '/images/rocket.png');
 
 // Load your project's Routes
 keystone.set('routes', require('./routes'));
