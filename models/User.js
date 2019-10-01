@@ -13,8 +13,11 @@ User.add({
 	title: { type: String },
 	photo: { type: Types.CloudinaryImage },
 	password: { type: Types.Password, initial: true, required: true },
-	country: { type: String, required: true, default: 'US' },
-	region: { type: Types.Select, options: 'APAC, AMER, EMEA, other', default: 'AMER', index: true },
+	city: { type: String },
+	state: { type: String },
+	country: { type: String, default: 'US' },
+	location: { type: Types.GeoPoint, required: false },
+	region: { type: Types.Select, options: 'APAC, AMER, EMEA, other', default: 'AMER' },
 }, 'Permissions', {
 	isAdmin: { type: Boolean, label: 'Can access Keystone', index: true },
 });
@@ -35,5 +38,5 @@ User.relationship({ ref: 'Startup', path: 'startups', refPath: 'name' });
 /**
  * Registration
  */
-User.defaultColumns = 'name, email, isAdmin';
+User.defaultColumns = 'name, photo, region, email, isAdmin';
 User.register();
