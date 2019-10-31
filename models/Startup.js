@@ -45,7 +45,25 @@ Startup.add({
 	status: { type: Types.Select, options: 'accepted, rejected, expired, applied, pending', default: 'accepted', index: true },
     rejectReason: { type: String, dependsOn: { status: ['rejected']}},
     rejectedInSDFC: { type: Boolean },
-    advisor: { type: Types.Relationship, ref: 'User', index: true },
+    workflow: {
+        applied: {
+            date: { type: Date },
+        },
+        advisorAssigned: {
+            date: { type: Date },
+        },
+        introEmailSent: {
+            date: { type: Date },
+        },
+
+    }
+    advisor: { 
+        dateAssigned: {type: Date },
+        workflow: {
+
+        },
+        type: Types.Relationship, ref: 'User', index: true 
+    },
     advisorName: { type: String },
 	contacts: { type: Types.Relationship, ref: 'Contact', index: true, noedit: false },
     logo: { type: Types.CloudinaryImage },
