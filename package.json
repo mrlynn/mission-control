@@ -6,7 +6,7 @@
     "async": "3.1.0",
     "cloudinary": "1.15.0",
     "dotenv": "8.1.0",
-    "express-handlebars": "3.1.0",
+    "express-handlebars": "5.1.0",
     "handlebars": "4.4.0",
     "keystone": "4.2.1",
     "lodash": "4.17.15",
