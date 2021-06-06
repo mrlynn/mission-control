@@ -14,7 +14,7 @@
     "moment": "2.24.0"
   },
   "devDependencies": {
-    "eslint": "6.5.1",
+    "eslint": "7.28.0",
     "eslint-config-keystone": "3.0.0",
     "eslint-plugin-react": "7.15.0"
   },
